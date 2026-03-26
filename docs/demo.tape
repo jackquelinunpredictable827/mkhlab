@@ -1,43 +1,71 @@
-# مخلب Demo — VHS tape file
-# Run: vhs docs/demo.tape
-
 Output docs/demo.gif
 
+Set Shell zsh
 Set FontFamily "SF Mono"
-Set FontSize 14
-Set Width 1200
-Set Height 600
+Set FontSize 16
+Set Width 1000
+Set Height 550
 Set Theme "Catppuccin Mocha"
-Set Padding 20
+Set Padding 15
+Set TypingSpeed 30ms
 
-Type "# 🦅 مخلب — Arabic AI Skills for OpenClaw"
+Type "echo '🦅 مخلب — Arabic AI Skills for OpenClaw'"
 Enter
-Sleep 1s
+Sleep 1.5s
 
-Type "openclaw skills list 2>/dev/null | grep 'openclaw-extra' | head -20"
+Type "echo ''"
 Enter
-Sleep 3s
 
-Type "# Let's test prayer times..."
+Type "echo '🕌 أوقات الصلاة — الرياض:'"
 Enter
-Sleep 1s
+Sleep 500ms
 
-Type 'curl -s "https://api.aladhan.com/v1/timingsByCity?city=Riyadh&country=SA&method=4" | python3 -c "import sys,json; t=json.load(sys.stdin)['"'"'data'"'"']['"'"'timings'"'"']; print('"'"'🕌 أوقات الصلاة — الرياض'"'"'); [print(f'"'"'  {k}: {v}'"'"') for k,v in t.items() if k in ['"'"'Fajr'"'"','"'"'Dhuhr'"'"','"'"'Asr'"'"','"'"'Maghrib'"'"','"'"'Isha'"'"']]"'
-Enter
-Sleep 3s
-
-Type "# Hijri date today..."
-Enter
-Sleep 1s
-
-Type 'curl -s "https://api.aladhan.com/v1/gToH" | python3 -c "import sys,json; h=json.load(sys.stdin)['"'"'data'"'"']['"'"'hijri'"'"']; print(f'"'"'📅 {h[\"day\"]} {h[\"month\"][\"ar\"]} {h[\"year\"]} هـ'"'"')"'
+Type@0ms "curl -sL 'https://api.aladhan.com/v1/timingsByCity?city=Riyadh&country=SA&method=4' | python3 -c \"import sys,json; t=json.load(sys.stdin)['data']['timings']; [print(f'  {n}: {t[k]}') for k,n in [('Fajr','الفجر'),('Dhuhr','الظهر'),('Asr','العصر'),('Maghrib','المغرب'),('Isha','العشاء')]]\""
 Enter
 Sleep 3s
 
-Type "# 🦅 مخلب — 40 skills, 2 channels, works with any model"
+Type "echo ''"
 Enter
-Sleep 2s
 
-Type "# github.com/Moshe-ship/mkhlab"
+Type "echo '📅 التاريخ الهجري:'"
+Enter
+Sleep 500ms
+
+Type@0ms "curl -sL 'https://api.aladhan.com/v1/gToH' | python3 -c \"import sys,json; h=json.load(sys.stdin)['data']['hijri']; print(f'  {h[chr(34)+chr(100)+chr(97)+chr(121)+chr(34)]} {h[chr(34)+chr(109)+chr(111)+chr(110)+chr(116)+chr(104)+chr(34)][chr(34)+chr(97)+chr(114)+chr(34)]} {h[chr(34)+chr(121)+chr(101)+chr(97)+chr(114)+chr(34)]} هـ')\""
 Enter
 Sleep 3s
+
+Type "echo ''"
+Enter
+
+Type "echo '📖 آية الكرسي:'"
+Enter
+Sleep 500ms
+
+Type@0ms "curl -sL 'https://api.alquran.cloud/v1/ayah/2:255/quran-uthmani' | python3 -c \"import sys,json; d=json.load(sys.stdin)['data']; print(f'  ﴿ {d[chr(34)+chr(116)+chr(101)+chr(120)+chr(116)+chr(34)][:80]}... ﴾')\""
+Enter
+Sleep 3s
+
+Type "echo ''"
+Enter
+
+Type "echo '📜 صحيح البخاري — حديث ١:'"
+Enter
+Sleep 500ms
+
+Type@0ms "curl -sL 'https://api.hadith.gading.dev/books/bukhari?range=1-1' | python3 -c \"import sys,json; d=json.load(sys.stdin)['data']['hadiths'][0]; print(f'  {d[chr(34)+chr(97)+chr(114)+chr(97)+chr(98)+chr(34)][:100]}...')\""
+Enter
+Sleep 3s
+
+Type "echo ''"
+Enter
+
+Type "echo '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'"
+Enter
+Type "echo '40 skills · 3 agents · 2 channels'"
+Enter
+Type "echo 'from Saudi Arabia 🇸🇦 for the Arab world'"
+Enter
+Type "echo 'github.com/Moshe-ship/mkhlab'"
+Enter
+Sleep 4s
