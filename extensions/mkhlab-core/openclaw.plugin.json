@@ -1,0 +1,30 @@
+{
+  "id": "mkhlab-core",
+  "name": "مخلب — Arabic AI Skills",
+  "description": "Arabic-first AI assistant plugin for OpenClaw. Prayer times, Hijri calendar, Quran search, translation, dialect detection, Arabic NLP tools, and more.",
+  "skills": ["../../skills"],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "defaultDialect": {
+        "type": "string",
+        "description": "Default Arabic dialect (egyptian, gulf, levantine, maghrebi, iraqi, msa)",
+        "default": "msa"
+      },
+      "prayerMethod": {
+        "type": "number",
+        "description": "Prayer calculation method (4=Umm al-Qura, 5=Egyptian, 3=Turkey/Iraq, 2=ISNA)",
+        "default": 4
+      },
+      "city": {
+        "type": "string",
+        "description": "Default city for prayer times and location-based skills"
+      },
+      "country": {
+        "type": "string",
+        "description": "Default country code"
+      }
+    }
+  }
+}

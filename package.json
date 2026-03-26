@@ -1,0 +1,29 @@
+{
+  "name": "@mkhlab/openclaw-mkhlab",
+  "version": "0.1.0",
+  "description": "مخلب — Arabic-first OpenClaw plugin. 14+ Arabic AI skills, dialect-aware, culturally sensitive.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Mousa Abu Mazin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mousaabumazin/mkhlab"
+  },
+  "keywords": [
+    "openclaw",
+    "arabic",
+    "ai",
+    "مخلب",
+    "عربي",
+    "skills",
+    "plugin"
+  ],
+  "openclaw": {
+    "extensions": [
+      "./extensions/mkhlab-core/index.ts"
+    ]
+  },
+  "workspaces": [
+    "extensions/*"
+  ]
+}

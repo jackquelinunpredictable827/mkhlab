@@ -1,0 +1,10 @@
+{
+  "name": "@mkhlab/mkhlab-core",
+  "version": "0.1.0",
+  "description": "Core plugin for مخلب Arabic OpenClaw integration",
+  "type": "module",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  }
+}
