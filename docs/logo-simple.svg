@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Anthropic-style minimal: dark bg, warm accent -->
+  <rect width="200" height="200" rx="32" fill="#1a1a2e"/>
+
+  <!-- Stylized claw/talon mark — 3 curved lines like OpenClaw's > but as talons -->
+  <path d="M60 50 Q100 100, 70 150" stroke="#d4a574" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <path d="M90 40 Q130 100, 100 160" stroke="#d4a574" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <path d="M120 50 Q160 100, 130 150" stroke="#d4a574" stroke-width="8" stroke-linecap="round" fill="none"/>
+
+  <!-- Dot — like Anthropic's minimal mark -->
+  <circle cx="148" cy="52" r="6" fill="#d4a574"/>
+
+  <!-- مخلب text -->
+  <text x="100" y="190" text-anchor="middle"
+        font-family="system-ui, sans-serif"
+        font-size="24" font-weight="700" fill="#d4a574"
+        direction="rtl">مخلب</text>
+</svg>

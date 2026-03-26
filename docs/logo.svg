@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!-- Background circle — warm sand/desert tone like Anthropic's earthy palette -->
+  <circle cx="256" cy="256" r="248" fill="#1a1a2e" stroke="#d4a574" stroke-width="4"/>
+
+  <!-- Eagle claw — the مخلب (claw) symbol, OpenClaw-inspired -->
+  <!-- Main talon -->
+  <path d="M256 80 C200 140, 160 200, 180 280 C190 310, 220 340, 256 360 C292 340, 322 310, 332 280 C352 200, 312 140, 256 80Z"
+        fill="#d4a574" opacity="0.15"/>
+
+  <!-- Three claw talons — like OpenClaw's lobster but as eagle talons -->
+  <!-- Left talon -->
+  <path d="M160 320 C140 340, 120 370, 130 400 C135 410, 145 415, 155 410 C170 400, 175 380, 170 350 Z"
+        fill="#d4a574" stroke="#d4a574" stroke-width="2"/>
+
+  <!-- Center talon (longest) -->
+  <path d="M256 340 C250 370, 245 400, 250 430 C253 440, 259 440, 262 430 C267 400, 262 370, 256 340 Z"
+        fill="#d4a574" stroke="#d4a574" stroke-width="2"/>
+
+  <!-- Right talon -->
+  <path d="M352 320 C372 340, 392 370, 382 400 C377 410, 367 415, 357 410 C342 400, 337 380, 342 350 Z"
+        fill="#d4a574" stroke="#d4a574" stroke-width="2"/>
+
+  <!-- Eagle head silhouette — minimal, geometric -->
+  <path d="M256 100 C230 100, 210 115, 210 140 C210 160, 225 175, 240 175 L230 195 L250 180 C252 182, 254 182, 256 180 C258 182, 260 182, 262 180 L282 195 L272 175 C287 175, 302 160, 302 140 C302 115, 282 100, 256 100Z"
+        fill="#d4a574"/>
+
+  <!-- Eagle eye -->
+  <circle cx="235" cy="135" r="5" fill="#1a1a2e"/>
+  <circle cx="277" cy="135" r="5" fill="#1a1a2e"/>
+
+  <!-- Wings spread — simplified, geometric -->
+  <!-- Left wing -->
+  <path d="M210 160 C180 150, 130 130, 90 140 C110 155, 140 165, 170 170 C150 175, 110 180, 80 195 C110 195, 150 190, 185 180 Z"
+        fill="#d4a574" opacity="0.8"/>
+
+  <!-- Right wing -->
+  <path d="M302 160 C332 150, 382 130, 422 140 C402 155, 372 165, 342 170 C362 175, 402 180, 432 195 C402 195, 362 190, 327 180 Z"
+        fill="#d4a574" opacity="0.8"/>
+
+  <!-- Arabic text مخلب — centered below -->
+  <text x="256" y="470" text-anchor="middle"
+        font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+        font-size="48" font-weight="700" fill="#d4a574"
+        direction="rtl" unicode-bidi="bidi-override">مخلب</text>
+</svg>

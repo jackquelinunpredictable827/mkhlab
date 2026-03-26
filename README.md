@@ -1,16 +1,18 @@
 <div align="center">
 
-# 🦅 مخلب — Mkhlab
+<img src="docs/logo-simple.svg" alt="مخلب logo" width="120" />
+
+# مخلب — Mkhlab
 
 ### مساعدك الذكي العربي. مفتوح المصدر. يشتغل على جهازك. بياناتك عندك.
 
 **The first Arabic-first plugin for [OpenClaw](https://github.com/openclaw/openclaw).**
 
-30 Arabic AI skills · 3 tools · 2 channels · Dialect-aware · Works with any model
+40 Arabic AI skills · 3 tools · 2 channels · Dialect-aware · Works with any model
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![OpenClaw Plugin](https://img.shields.io/badge/OpenClaw-Plugin-blue.svg)](https://github.com/openclaw/openclaw)
-[![Skills](https://img.shields.io/badge/Skills-30-orange.svg)](#skills)
+[![Skills](https://img.shields.io/badge/Skills-40-orange.svg)](#skills)
 
 </div>
 
@@ -69,7 +71,7 @@ pipx install -e ./tools/raqeeb
 openclaw skills list | grep "openclaw-extra"
 ```
 
-You should see 20 skills, all ✓ ready.
+You should see 40 skills, all ✓ ready.
 
 ## Skills
 
@@ -138,7 +140,7 @@ You should see 20 skills, all ✓ ready.
 | Channel | Description |
 |---------|-------------|
 | WhatsApp | Scoped service bot — prayer, Hijri, Quran, hadith, translation |
-| Telegram | Full access to all 30 skills via bot (polling + webhook) |
+| Telegram | Full access to all 40 skills via bot (polling + webhook) |
 
 ## Model Support
 
@@ -211,7 +213,7 @@ It runs on top of OpenClaw — like openclaw-china does for Chinese platforms.
 - [x] Phase 2: WhatsApp channel (proper ChannelPlugin API)
 - [x] Phase 3: TTS/STT/OCR + grammar + tashkeel + hadith
 - [x] Phase 4: Arabic RAG + Telegram channel + 9 more skills
-- [x] Phase 5: 30 skills — Islamic finance, poetry, names, education, voice assistant, code review, web search, adhan player
+- [x] Phase 5: 40 skills — finance, poetry, names, education, voice, code review, cooking, travel, health, Saudi apps, Snapchat, kids
 - [ ] Phase 6: ClawHub marketplace publishing
 - [ ] Phase 7: End-to-end testing + CI/CD
 - [ ] Phase 8: Community contributions + dialect expansion

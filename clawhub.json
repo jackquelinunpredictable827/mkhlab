@@ -2,7 +2,7 @@
   "$schema": "https://clawhub.com/schema/v1/skill-collection.json",
   "name": "mkhlab",
   "displayName": "مخلب — Arabic AI Skills",
-  "description": "The first Arabic-first plugin for OpenClaw. 30 skills covering Islamic services, Arabic NLP, translation, education, finance, code review, and more.",
+  "description": "The first Arabic-first plugin for OpenClaw. 40 skills covering Islamic services, Arabic NLP, translation, education, finance, code review, cooking, travel, health, and more.",
   "version": "0.2.0",
   "author": {
     "name": "Mousa Abu Mazin",
@@ -58,6 +58,16 @@
     {"path": "skills/arabic-web-search", "category": "search"},
     {"path": "skills/arabic-code-review", "category": "developer"},
     {"path": "skills/arabic-math", "category": "education"},
-    {"path": "skills/arabic-science", "category": "education"}
+    {"path": "skills/arabic-science", "category": "education"},
+    {"path": "skills/livestock-manager", "category": "agriculture"},
+    {"path": "skills/arabic-cooking", "category": "lifestyle"},
+    {"path": "skills/arab-travel", "category": "lifestyle"},
+    {"path": "skills/arabic-health", "category": "lifestyle"},
+    {"path": "skills/arabic-resume", "category": "business"},
+    {"path": "skills/arabic-email", "category": "business"},
+    {"path": "skills/arabic-legal", "category": "business"},
+    {"path": "skills/saudi-apps", "category": "regional"},
+    {"path": "skills/snapchat-content", "category": "regional"},
+    {"path": "skills/arabic-kids", "category": "education"}
   ]
 }
