@@ -1,0 +1,79 @@
+name: Lint Skills
+
+on:
+  push:
+    paths: ['skills/**']
+  pull_request:
+    paths: ['skills/**']
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate SKILL.md files
+        run: |
+          errors=0
+          total=0
+
+          for skill_dir in skills/*/; do
+            skill_file="$skill_dir/SKILL.md"
+            skill_name=$(basename "$skill_dir")
+            total=$((total + 1))
+
+            # Check file exists
+            if [ ! -f "$skill_file" ]; then
+              echo "❌ $skill_name: Missing SKILL.md"
+              errors=$((errors + 1))
+              continue
+            fi
+
+            # Check frontmatter exists
+            if ! head -1 "$skill_file" | grep -q "^---$"; then
+              echo "❌ $skill_name: Missing YAML frontmatter"
+              errors=$((errors + 1))
+              continue
+            fi
+
+            # Check required fields
+            if ! grep -q "^name:" "$skill_file"; then
+              echo "❌ $skill_name: Missing 'name' field"
+              errors=$((errors + 1))
+            fi
+
+            if ! grep -q "^description:" "$skill_file"; then
+              echo "❌ $skill_name: Missing 'description' field"
+              errors=$((errors + 1))
+            fi
+
+            # Check metadata is single-line JSON (OpenClaw requirement)
+            if grep -q "^metadata:" "$skill_file"; then
+              metadata_line=$(grep "^metadata:" "$skill_file")
+              if ! echo "$metadata_line" | grep -q '{'; then
+                echo "⚠️  $skill_name: metadata should be single-line JSON"
+              fi
+            fi
+
+            # Check description is in Arabic (contains Arabic chars)
+            desc=$(grep "^description:" "$skill_file" | head -1)
+            if ! echo "$desc" | grep -qP '[\x{0600}-\x{06FF}]'; then
+              echo "⚠️  $skill_name: Description should contain Arabic text"
+            fi
+
+            echo "✅ $skill_name"
+          done
+
+          echo ""
+          echo "━━━━━━━━━━━━━━━━━━━━━━"
+          echo "Total: $total skills"
+          echo "Errors: $errors"
+
+          if [ $errors -gt 0 ]; then
+            exit 1
+          fi
+
+      - name: Count skills
+        run: |
+          count=$(ls -d skills/*/ | wc -l)
+          echo "🦅 مخلب has $count skills"
